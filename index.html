@@ -1,12 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/STP-13018/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Matche Miracle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/STP-13018/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-13018/assets/styles-BvvI0Brj.css">
+    <link rel="stylesheet" crossorigin href="/STP-13018/assets/styles-DYUy1diZ.css">
   </head>
   <body>
     <header class="header">
@@ -14,32 +20,82 @@
     <div class="wrapper">
       <nav class="nav">
         <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/STP-13018/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/STP-13018/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
+          <img src="/STP-13018/assets/logo-D7yR45ro.png" alt="Site logo" />
         </a>
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+            <a class="nav-link" href="#about">About the Game</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#play">How to Play</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
+      <div class="header-burger-wrapper">
+        <button type="button" class="burger-btn" data-action="open">
+          <svg width="24" height="24" class="icon">
+            <use href="/STP-13018/assets/sprite-B1fWnhVP.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+
         <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
+          <div class="container burger-menu-wrap">
+            <ul class="burger-nav-list">
+              <li class="burger-nav-item">
+                <a class="burger-nav-link" href="#about" data-menu-link>
+                  About the Game
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link" href="#gallery" data-menu-link>
+                  Gallery
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link" href="#play" data-menu-link>
+                  How to Play
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link" href="#features" data-menu-link>
+                  Features
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link" href="#reviews" data-menu-link>
+                  Reviews
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link" href="#faq" data-menu-link>FAQ</a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link" href="#contact" data-menu-link>
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="btn-close" data-action="close">
+              <svg width="24" height="24" class="icon">
+                <use href="/STP-13018/assets/sprite-B1fWnhVP.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -47,95 +103,86 @@
 </header>
 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+      <section class="hero">
+  <div class="container"></div>
+</section>
+
+      <section class="about" id="about">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/STP-13018/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    <h2 class="section-title">About the Game</h2>
   </div>
 </section>
 
-      <article class="badges">
+      <section class="gallery" id="gallery">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
+    <h2 class="section-title">Gallery</h2>
   </div>
-</article>
+</section>
+
+      <section class="play" id="play">
+  <div class="container">
+    <h2 class="section-title">How to Play</h2>
+    <p class="section-desc">Match objects and clear the board</p>
+  </div>
+</section>
+
+      <section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title">Features</h2>
+    <p class="section-desc">
+      Designed for smooth and rewarding puzzle gameplay
+    </p>
+  </div>
+</section>
+
+      <section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="section-title">Reviews</h2>
+  </div>
+</section>
+
+      <section class="faq" id="faq">
+  <div class="container">
+    <h2 class="section-title">FAQ</h2>
+    <p class="section-desc">Quick answers</p>
+  </div>
+</section>
+
+      <section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+  </div>
+</section>
 
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+    <div class="footer-nav-wrap">
+      <a class="footer-logo" href="./index.html" aria-label="Site logo">
+        <img src="/STP-13018/assets/logo-D7yR45ro.png" alt="Site logo" />
       </a>
-    </p>
+      <ul class="footer-nav">
+        <li><a class="legal-link" href="./privacy.html">Privacy Policy</a></li>
+        <li>
+          <a class="legal-link" href="./service.html">Terms of Service</a>
+        </li>
+      </ul>
+      <a
+        class="google-play-link"
+        target="_blank"
+        href="https://play.google.com/store/apps/details?id=com.tile.triplematch.matching&hl=en"
+      >
+        <svg width="24" height="24" class="icon">
+          <use href="/STP-13018/assets/sprite-B1fWnhVP.svg#icon-google-play"></use>
+        </svg>
+        <div>
+          <p class="link-text-smole">Get it on</p>
+          <p class="link-text-big">GOOGLE PLAY</p>
+        </div>
+      </a>
+    </div>
+    <p class="copy">&copy; 2026 motiona.it.com — All rights reserved.</p>
   </div>
 </footer>
 
