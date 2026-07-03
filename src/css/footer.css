@@ -1,21 +1,102 @@
 .footer {
-  padding: 20px 0;
+  background-color: var(--color-blue);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.footer-desc {
+
+.footer-nav-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.footer-logo {
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.legal-link,
+.copy {
+  color: var(--color-yellow);
+}
+
+.google-play-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  height: 70px;
+  border-radius: 16px;
+  padding: 12px 16px;
+  background-color: var(--color-black);
+}
+
+.link-text-smole,
+.link-text-big {
+  color: var(--color-gray);
+  text-transform: uppercase;
+}
+
+.link-text-big {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.copy {
   text-align: center;
 }
-.footer-link {
-  position: relative;
-}
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer-nav-wrap {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    margin: 0 auto 0 0;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+  }
+
+  .legal-link {
+    transition: color var(--transition-efect);
+  }
+
+  .legal-link:hover {
+    color: var(--color-gray);
+  }
+
+  .google-play-link {
+    margin-left: auto;
+    width: 230px;
+    transition: background-color var(--transition-efect);
+  }
+  .google-play-link:hover {
+    border: 1px solid var(--color-black);
+    background-color: var(--color-blue);
+  }
 }
