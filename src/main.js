@@ -1,2 +1,2 @@
 import './js/burgerMenu';
-import './js/gallerySlider';
+import './js/gallerySwiper';
