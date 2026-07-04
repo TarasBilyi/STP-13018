@@ -1,0 +1,33 @@
+.gallery {
+  background-color: var(--color-yellow);
+}
+
+.swiper-wrapper {
+  padding-bottom: 35px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.swiper-navigation-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.swiper-desck-buttons {
+  display: none;
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .swiper-desck-buttons {
+    display: block;
+  }
+}
