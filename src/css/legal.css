@@ -38,12 +38,42 @@
   margin-bottom: 20px;
 }
 
+.service-text {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
 .legal-text:last-child {
   margin-bottom: 0;
 }
 
+.name-game {
+  color: var(--color-blue);
+}
+
+.app-domain,
 .legal-email {
   color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.service-strong {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.service-text-uppercase {
+  text-transform: uppercase;
+}
+
+.service-list {
+  list-style-type: disc;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-bottom: 12px;
 }
 
 /* Styles for Desktop devices */
