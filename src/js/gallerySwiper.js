@@ -6,7 +6,7 @@ import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const gallerySwiper = new Swiper('[data-gallery-swiper]', {
-  modules: [Navigation, Pagination, Autoplay],
+  modules: [Pagination, Autoplay],
 
   loop: true,
   speed: 700,
@@ -16,11 +16,6 @@ const gallerySwiper = new Swiper('[data-gallery-swiper]', {
   breakpoints: {
     375: { slidesPerView: 1, spaceBetween: 10 },
     1440: { slidesPerView: 4, spaceBetween: 20 },
-  },
-
-  navigation: {
-    nextEl: '[data-swiper-button-next]',
-    prevEl: '[data-swiper-button-prev]',
   },
 
   pagination: {
