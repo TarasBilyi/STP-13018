@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 const gallerySwiper = new Swiper('[data-gallery-swiper]', {
   modules: [Pagination, Autoplay],
