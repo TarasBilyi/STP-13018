@@ -18,4 +18,12 @@
     margin-bottom: 32px;
     width: 100%;
   }
+
+  .contact-link {
+    transition: color var(--transition-efect);
+  }
+
+  .contact-link:hover {
+    color: var(--color-blue);
+  }
 }
