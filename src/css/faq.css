@@ -1,0 +1,23 @@
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.faq-img {
+  border-radius: 16px;
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .faq-wrap {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .faq-list {
+    margin-bottom: 0;
+  }
+}
