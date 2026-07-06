@@ -1,0 +1,31 @@
+.features-desc {
+  text-align: left;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .features-desc {
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, 495px);
+    column-gap: 60px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  .feature-item {
+    height: 64px;
+  }
+}

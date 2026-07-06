@@ -1,0 +1,30 @@
+.about-title {
+  display: block;
+  width: 250px;
+  margin: 0 auto 20px;
+}
+
+.about-img {
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-wrap {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .about-img {
+    margin-bottom: 0;
+  }
+
+  .about-text {
+    max-width: 600px;
+  }
+
+  .about-title {
+    width: 100%;
+  }
+}
