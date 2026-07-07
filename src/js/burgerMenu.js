@@ -4,20 +4,18 @@ const burgerMenuEl = document.querySelector('[data-visible]');
 const navLinks = document.querySelectorAll('[data-menu-link]');
 const body = document.querySelector('body');
 
-openBtnEl.addEventListener('click', e => {
+openBtnEl.addEventListener('click', () => {
   burgerMenuEl.dataset.visible = 'open';
-  body.classList.toggle('no-scroll');
+  body.dataset.scroll = 'locked';
 });
 
 closeBtnEl.addEventListener('click', closeMenu);
 
 navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    closeMenu();
-  });
+  link.addEventListener('click', closeMenu);
 });
 
 function closeMenu() {
   burgerMenuEl.dataset.visible = 'close';
-  body.classList.remove('no-scroll');
+  delete body.dataset.scroll;
 }

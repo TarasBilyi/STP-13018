@@ -31,12 +31,12 @@ body {
   color: var(--color-black);
 }
 
-main {
-  flex-grow: 1;
+body[data-scroll='locked'] {
+  overflow: hidden;
 }
 
-.no-scroll {
-  overflow: hidden;
+main {
+  flex-grow: 1;
 }
 
 .section-title {
