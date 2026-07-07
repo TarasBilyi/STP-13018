@@ -80,6 +80,10 @@
     max-width: 1440px;
   }
 
+  .hero-img {
+    max-width: 579px;
+  }
+
   .hero-content {
     grid-template-areas:
       'title img'
