@@ -35,10 +35,6 @@ body[data-scroll='locked'] {
   overflow: hidden;
 }
 
-body[data-scroll='unlocked'] {
-  overflow: auto;
-}
-
 main {
   flex-grow: 1;
 }

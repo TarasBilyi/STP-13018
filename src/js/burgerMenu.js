@@ -17,5 +17,5 @@ navLinks.forEach(link => {
 
 function closeMenu() {
   burgerMenuEl.dataset.visible = 'close';
-  body.dataset.scroll = 'unlocked';
+  delete body.dataset.scroll;
 }
