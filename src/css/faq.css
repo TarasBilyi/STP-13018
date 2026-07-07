@@ -20,4 +20,8 @@
   .faq-list {
     margin-bottom: 0;
   }
+
+  .faq-img {
+    min-width: 620px;
+  }
 }

@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 375px;
+  max-width: 430px;
   margin: 80px auto 0;
 }
 
@@ -11,7 +11,7 @@
   .hero {
     background-image: url('../img/hero/hero-background-m@2x.jpg');
     background-size: cover;
-    max-width: 375px;
+    max-width: 430px;
   }
 }
 
@@ -22,7 +22,6 @@
     'img'
     'wrap';
   gap: 20px;
-  text-align: center;
 }
 
 .hero-title {
@@ -30,9 +29,10 @@
   grid-area: title;
   font-weight: 700;
   font-size: 40px;
-  line-height: 1.2;
-  width: 250px;
-  margin: 0 auto;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 280px;
 }
 
 .hero-img {
@@ -99,6 +99,7 @@
     line-height: 1.2;
     margin-top: auto;
     width: 100%;
+    text-align: left;
   }
 
   .text-prompting {

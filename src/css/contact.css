@@ -4,7 +4,8 @@
 
 .contact-desc {
   width: 250px;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .contact-email {
@@ -17,6 +18,7 @@
   .contact-desc {
     margin-bottom: 32px;
     width: 100%;
+    text-align: center;
   }
 
   .contact-link {
