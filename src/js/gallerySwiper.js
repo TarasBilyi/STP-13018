@@ -7,11 +7,20 @@ const gallerySwiper = new Swiper('[data-gallery-swiper]', {
   loop: true,
   speed: 700,
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 10,
+  centeredSlides: false,
 
   breakpoints: {
-    375: { slidesPerView: 1, spaceBetween: 10 },
-    1440: { slidesPerView: 4, spaceBetween: 20 },
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: false,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 208,
+      centeredSlides: true,
+    },
   },
 
   pagination: {

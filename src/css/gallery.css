@@ -19,10 +19,6 @@
   justify-content: center;
 }
 
-.swiper-pagination-bottom {
-  bottom: 0px;
-}
-
 .swiper-pagination-bullet {
   background-color: #919097;
   width: 8px;
@@ -38,6 +34,29 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+  .swiper-wrapper {
+    padding-bottom: 45px;
+  }
+
+  .gallery .swiper {
+    overflow: hidden;
+    padding: 17px 0;
+  }
+
+  .gallery .swiper-wrapper {
+    align-items: center;
+  }
+
+  .gallery .swiper-slide {
+    transition: transform 0.4s ease;
+    transform: scale(0.97);
+  }
+
+  .gallery .swiper-slide-active {
+    transform: scale(1.07);
+    z-index: 2;
+  }
+
   .swiper-desck-buttons {
     display: block;
   }
